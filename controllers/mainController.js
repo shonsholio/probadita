@@ -7,8 +7,8 @@ controller.main = (req,res) => {
 }
 
 controller.luisfer = (req,res) => {
-    res.send('SOY LUISFER')
-//   res.render('main');
+    // res.send('SOY LUISFER')
+  res.render('luisfer');
 }
 
 // controller.cj = (req,res) => {
