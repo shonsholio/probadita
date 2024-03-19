@@ -2,7 +2,12 @@ const controller = {};
 const fs = require('fs');
 
 controller.main = (req,res) => {
-    res.send('ARRANCAMOS')
+    // res.send('ARRANCAMOS')
+  res.render('main');
+}
+
+controller.luisfer = (req,res) => {
+    res.send('SOY LUISFER')
 //   res.render('main');
 }
 
