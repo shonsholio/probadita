@@ -11,10 +11,6 @@ controller.luisfer = (req,res) => {
   const data = fs.readFileSync('./src/props.json', 'utf8');
   const info = JSON.parse(data);
 
-  console.log(info)
-  console.log(typeof info)
-
-
   info.forEach(element => {
   });
   res.render('luisfer', {
