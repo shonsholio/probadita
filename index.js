@@ -15,7 +15,7 @@ app.set('views', path.join(__dirname, './views'))
 
 //MIDDLEWARES
 app.use(morgan('dev'));
-
+app.use(express.urlencoded({ extended: false }));
 
 //ROUTES
 app.use('/', mainRoutes);
