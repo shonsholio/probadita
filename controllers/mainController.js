@@ -6,12 +6,12 @@ controller.main = (req,res) => {
 }
 
 controller.luisfer = (req,res) => {
-  const data = fs.readFileSync('./src/props.json', 'utf8');
+  
+  // const data = fs.readFileSync('./src/props.json', 'utf8');
   // const info = JSON.parse(data);
 
   res.render('luisfer');
-
-
+  console.log(409)
   // info.forEach(element => {
   // });
   // res.render('luisfer', {
