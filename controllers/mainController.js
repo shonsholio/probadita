@@ -6,8 +6,8 @@ controller.main = (req,res) => {
 }
 
 controller.luisfer = (req,res) => {
-  // const data = fs.readFileSync('./src/props.json', 'utf8');
-  // const info = JSON.parse(data);
+  const data = fs.readFileSync('./src/props.json', 'utf8');
+  const info = JSON.parse(data);
 
   res.render('luisfer');
 
