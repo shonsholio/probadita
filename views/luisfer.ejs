@@ -15,11 +15,13 @@
     </div>
   </div>
 </div>
-
-    <h2> CIUDAD JARDIN </h2>
+  <% data.forEach((propiedad,index) => {%>
+    <% if (propiedad.propiedad == 409){ %>
+    <h4><%= propiedad.propiedad %></h4>
+    <h2><%= propiedad.ubicacion %></h2>
     <button><a href="/">INICIO</a></button>
     <script src="slider.js"></script>
     <script src="posts.js"></script>
-
+  <% }}) %>
   </body>
 </html>
