@@ -16,12 +16,12 @@
   </div>
 </div>
   <% data.forEach((propiedad,index) => {%>
-    <% if (propiedad.propiedad == 409){ %>
+    <% if (propiedad.propiedad == apto){ %>
 
-
-    <div class="model2 ml-4 mr-4 mt-2">
+      <div class="model2 ml-4 mr-4 mt-2">
           <tr>  
             <h3><%= propiedad.titulo %></h3>
+
             <h6>Loft entero en <%= propiedad.ubicacion %>, Barranquilla</h6>
             <h6><%= propiedad.huespedes %> - <%= propiedad.habitacion %> - <%= propiedad.camas %> - <%= propiedad.bano %></h6>
           </tr>
@@ -98,7 +98,6 @@
         </div>
     <button><a href="/">INICIO</a></button>
     <script src="slider.js"></script>
-    <script src="posts.js"></script>
 
   </body>
 </html>

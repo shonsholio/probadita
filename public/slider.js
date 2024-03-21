@@ -12,7 +12,7 @@ var sliderDerecha = document.querySelector("#slider-derecho");
 var sliderIzquierda = document.querySelector("#slider-izquierdo");
 
 var contador = 0;
-
+              
 function moverDerecha(){
   contador ++ ;
   if (contador > slider.length - 1) {

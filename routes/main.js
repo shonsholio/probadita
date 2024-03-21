@@ -4,8 +4,7 @@ const router = express.Router();
 const mainController = require('../controllers/mainController');
 
 router.get('/', mainController.main);
-router.get('/luisfer', mainController.luisfer);
-
+router.get('/ciudad-jardin', mainController.plantilla);
 
 
 module.exports = router;

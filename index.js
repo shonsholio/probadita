@@ -1,5 +1,6 @@
 const express = require('express');
 const morgan = require('morgan');
+const cors = require('cors');
 const path = require('path');
 
 const app = express();
@@ -15,6 +16,7 @@ app.set('views', path.join(__dirname, './views'))
 
 //MIDDLEWARES
 app.use(morgan('dev'));
+app.use(cors());
 app.use(express.urlencoded({ extended: false }));
 
 //ROUTES
