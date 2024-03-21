@@ -8,8 +8,8 @@ let indexCarpeta = carpetaStr.slice(34,37)
 
 var slider = [
                 `${indexCarpeta}/1.jpg`,
-                "409/2.jpg",
-                "409/3.jpg"
+                `${indexCarpeta}/2.jpg`,
+                `${indexCarpeta}/3.jpg`              
               ];
 
 document.Imagen.src = slider[0];
