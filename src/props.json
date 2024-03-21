@@ -19,6 +19,27 @@
     "huespedes": "2 huespedes",
     "habitacion": "1 habitación",
     "camas": "1 cama",
-    "bano": "1 baño" }
+    "bano": "1 baño" },
+    { "propiedad": "1001",
+    "ubicacion": "Paraiso",
+    "titulo": "Apto con Aire Acondicionado y Smart TV",
+    "huespedes": "6 huespedes",
+    "habitacion": "2 habitaciones",
+    "camas": "3 camas",
+    "bano": "2 baños" },
+    { "propiedad": "102",
+    "ubicacion": "Tivoli",
+    "titulo": "Apto con Aire Acondicionado y Smart TV",
+    "huespedes": "6 huespedes",
+    "habitacion": "3 habitaciones",
+    "camas": "3 camas",
+    "bano": "2 baños" },
+    { "propiedad": "702",
+    "ubicacion": "Villa Carolina",
+    "titulo": "Apto con Aire Acondicionado y Smart TV",
+    "huespedes": "6 huespedes",
+    "habitacion": "3 habitaciones",
+    "camas": "3 camas",
+    "bano": "2 baños" } 
 ]
 
