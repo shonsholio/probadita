@@ -6,12 +6,15 @@ controller.main = (req,res) => {
 }
 
 controller.plantilla = (req,res) => {
-  var prueba = req.url;
-  if (prueba == '/ciudad-jardin'){
+  var url = req.url;
+  if (url == '/ciudad-jardin'){
     var info = '409'
-  } else if (prueba =='/granadillo'){
+  } else if (url =='/granadillo'){
     var info = '306A'
+  } else if (url =='/la-campina'){
+    var info = '501A'
   }
+  
   res.render('plantilla', {
     data: props,
     apto: info
