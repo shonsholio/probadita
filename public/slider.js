@@ -1,7 +1,13 @@
-console.log('SI ESTAMOS TRABAJANDO EL JS');
+let carpeta = document.querySelector("#carpeta");
+let carpetaStr = carpeta.outerHTML;
+let indexCarpeta = carpetaStr.slice(34,37)
+
+// var carpetaStr = JSON.stringify(carpeta)
+
+
 
 var slider = [
-                "409/1.jpg",
+                `${indexCarpeta}/1.jpg`,
                 "409/2.jpg",
                 "409/3.jpg"
               ];
