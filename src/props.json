@@ -37,8 +37,8 @@
     { "propiedad": "702",
     "ubicacion": "Villa Carolina",
     "titulo": "Apto con Aire Acondicionado y Smart TV",
-    "huespedes": "6 huespedes",
-    "habitacion": "3 habitaciones",
+    "huespedes": 6,
+    "habitacion": 3,
     "camas": "3 camas",
     "bano": "2 baños" } 
 ]
