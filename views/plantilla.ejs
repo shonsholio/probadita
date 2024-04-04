@@ -4,7 +4,7 @@
   
   <div class="d-flex justify-content-center">
     
-    <div id="container-slider" class="col-lg-8 d-flex mt-lg-4">
+    <div id="container-slider" class="col-lg-8 d-flex mt-lg-3">
       
       <div id="slider-izquierdo" class="d-flex">
         <button class="bg-white border-0"> < </button>
@@ -31,23 +31,38 @@
 
     <div class="col-lg-8">
       <% data.forEach((propiedad,index) => {%>
-        <div id="carpeta" aria-valuetext="<%= apto %>"></div>
-        <% if (propiedad.propiedad == apto){ %>
+      <div id="carpeta" aria-valuetext="<%= apto %>"></div>
+      <% if (propiedad.propiedad == apto){ %>
       
-          <div class="model2 ml-4 mr-4 mt-2">
-              <tr>  
-                <h3><%= propiedad.titulo %></h3>
-      
-                <h5>Loft en <%= propiedad.ubicacion %>, Barranquilla</h5>
-                <h6><%= propiedad.huespedes %> huéspedes - <%= propiedad.habitacion %> habitaciones - <%= propiedad.camas %> - <%= propiedad.bano %></h6>
-              </tr>
+        <div class="model2 ml-4 mr-4 mt-2">
+          <tr>  
+            <h3><%= propiedad.titulo %></h3>
+            <h5>Loft en <%= propiedad.ubicacion %>, Barranquilla</h5>
+            <h6><%= propiedad.huespedes %> huéspedes - <%= propiedad.habitacion %> habitaciones - <%= propiedad.camas %> - <%= propiedad.bano %></h6>
+          </tr> <hr />  
+
+        <h6 class='texto-apoyo'>Dónde vas a dormir ?</h6>
               
-              <hr />  
-              <h6 class='texto-apoyo'>Dónde vas a dormir ?</h6>
-              
-              <div class='camas'>
-                <div class="contenedor-camas d-flex">
+        <div class="d-flex">
+          <% for (i = 0; i < propiedad.habitacion; ++i) { %>
+          <div class="p-3 mr-3 border border-3 rounded-2">
+            <h6>Habitación <%=i + 1 %></h6>
+          </div>
+          <% } %>  
+
+          <% if(propiedad.sofaCama > 0) { %>
+            <div class="p-3">
+              <h6>Sofá Cama <%=propiedad.sofaCama %></h6>
+            </div>
+          <% } %>  
+
+        </div>
+
+                <!-- <div class="contenedor-camas d-flex">
                   <div class="info-camap p-2">
+
+                    <% console.log(propiedad.habitacion) %>
+
                     <h6>Habitación</h6>
                     <p>1 cama queen</p>
                   </div>
@@ -55,8 +70,7 @@
                     <h6 class="fw-bold">Sala</h6>
                     <p>1 sofá cama</p>
                   </div>
-                </div>
-              </div>
+                </div> -->
               
               <hr />
               <div class="amenidades">
