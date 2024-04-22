@@ -38,15 +38,16 @@
           <tr>  
             <h3><%= propiedad.titulo %></h3>
             <h5>Loft en <%= propiedad.ubicacion %>, Barranquilla</h5>
-            <h6><%= propiedad.huespedes %> huéspedes - <%= propiedad.habitacion %> habitaciones - <%= propiedad.camas %> - <%= propiedad.bano %></h6>
+            <h6><%= propiedad.huespedes %> huéspedes  -  <%= propiedad.habitacion %> habitaciones  -  <%=propiedad.camas %> camas  -  <%= propiedad.bano %></h6>
           </tr> <hr />  
 
         <h6 class='texto-apoyo'>Dónde vas a dormir ?</h6>
               
         <div class="d-flex">
           <% for (i = 0; i < propiedad.habitacion; ++i) { %>
-          <div class="p-3 d-flex">
+          <div class="p-3 d-block align-items-center">
             <h6>Habitación <%=i + 1 %></h6>
+            <p><%=propiedad.camaSizes[i] %></p>
           </div>
           <% } %>  
 
@@ -57,24 +58,33 @@
           <% } %>  
 
         </div>
+        <hr />
 
-                <!-- <div class="contenedor-camas d-flex">
-                  <div class="info-camap p-2">
+        <h6 class="mb-4">Lo que este lugar ofrece</h6>
+        
+        <div class="">
 
-                    <% console.log(propiedad.habitacion) %>
+          <ul class="">
+            <p class="fw-bold">Cocina</p>
+            <% for (a = 0 ; a < (propiedad.amenInstalacionesYServicios).length; ++a) { %>
+            <div class="">
+              <li> <%=propiedad.amenCocina[a]  %> </li>
+            </div>
+            <% } %>
+          </ul>
 
-                    <h6>Habitación</h6>
-                    <p>1 cama queen</p>
-                  </div>
-                  <div class="info-cama p-2">
-                    <h6 class="fw-bold">Sala</h6>
-                    <p>1 sofá cama</p>
-                  </div>
-                </div> -->
+          <ul class="">
+            <p class="fw-bold">Instalaciones y Servicios</p>
+            <% for (a = 0 ; a < (propiedad.amenInstalacionesYServicios).length; ++a) { %>
+            <div class="">
+              <li> <%=propiedad.amenInstalacionesYServicios[a]  %> </li>
+            </div>
+            <% } %>
+          </ul>
+        </div>
+
               
-              <hr />
-              <div class="amenidades">
-                <h6 class='texto-apoyo'>Lo que este lugar ofrece</h6>
+              <div class="amenidades d-none">
                 <ul class='formato-amenid'>
                   <li class='titulo-amenidades'>Dormitorio y Lavadero</li>
                   <li class='texto-amenid'>Lavadora en la vivienda: Gratis</li>
@@ -100,24 +110,9 @@
                   <li class='texto-amenid'>Zona de trabajo</li>
                   
                   <li class='titulo-amenidades'>Cocina</li>
-                  <li class='texto-amenid'>Refrigerador</li>
-                  <li class='texto-amenid'>Utensilios básicos para cocinar</li>
-                  <li class='texto-amenid'>Platos y cubiertos</li>
-                  <li class='texto-amenid'>Lavavajillas</li>
-                  <li class='texto-amenid'>Estufa a gas</li>
-                  <li class='texto-amenid'>Horno</li>
-                  <li class='texto-amenid'>Cafetera</li>
-                  <li class='texto-amenid'>Tostadora</li>
-                  <li class='texto-amenid'>Licuadora</li>
+
+
                   
-                  <li class='titulo-amenidades'>Instalaciones y Servicios</li>
-                  <li class='texto-amenid'>Cerradura inteligente</li>  
-                  <li class='texto-amenid'>Estacionamiento gratuito</li>
-                  <li class='texto-amenid'>Balcón privado</li>
-                  <li class='texto-amenid'>Ascensor</li>
-                  <li class='texto-amenid'>Se permiten mascotas</li>
-                  <li class='texto-amenid'>Disponible para estadías largas</li>
-                  <li class='texto-amenid'>Llegada autónoma</li>
                   <br /> <br />
                 </ul>
                 
