@@ -4,19 +4,19 @@
   
   <div class="d-flex justify-content-center">
     
-    <div id="container-slider" class="col-lg-8 d-flex mt-lg-3">
+    <div id="container-slider img-container" class="col-lg-8 d-flex mt-lg-3">
       
-      <div id="slider-izquierdo" class="d-flex">
-        <button class="bg-white border-0"> < </button>
+      <div id="slider-izquierdo" class="">
+        <button class="bg-white border-0 overlay-text "> < </button>
       </div>
       
-      
-      <div class="slider-screen">
+      <div class="slider-screen img-fluid">
         <img name="Imagen" class="d-block w-100">
       </div>
       
-      <div id="slider-derecho" class="d-flex">
-        <button class="bg-white border-0"> > </button>
+      
+      <div id="slider-derecho" class="">
+        <button class="bg-white border-0 overlay-text"> > </button>
       </div>  
       
     </div>
@@ -27,6 +27,8 @@
     <button class=""><a href="/">HOME</a></button>
   </div>
   
+  <!-- ----------- CONTENIDO ----------------- -->
+
   <div class="d-flex justify-content-center">
 
     <div class="col-lg-8">
@@ -38,14 +40,14 @@
           <tr>  
             <h3><%= propiedad.titulo %></h3>
             <h5>Loft en <%= propiedad.ubicacion %>, Barranquilla</h5>
-            <h6><%= propiedad.huespedes %> huéspedes  -  <%= propiedad.habitacion %> habitaciones  -  <%=propiedad.camas %> camas  -  <%= propiedad.bano %></h6>
+            <h6><%= propiedad.huespedes %> huéspedes  -  <%= propiedad.habitacion %> habitaciones  -  <%=propiedad.camaSizes.length %> camas  -  <%= propiedad.bano %></h6>
           </tr> <hr />  
 
         <h6 class='texto-apoyo'>Dónde vas a dormir ?</h6>
               
         <div class="d-flex">
-          <% for (i = 0; i < propiedad.habitacion; ++i) { %>
-          <div class="p-3 d-block align-items-center">
+          <% for (i = 0; i < propiedad.camaSizes.length; ++i) { %>
+          <div class="p-3 align-items-center border border-2 mx-2 rounded">
             <h6>Habitación <%=i + 1 %></h6>
             <p><%=propiedad.camaSizes[i] %></p>
           </div>
@@ -118,6 +120,10 @@
                 
               </div>
               
+              <div>
+                <iframe src="<%=propiedad.mapa %>" class="w-100 mh-100" style="height: 400px;"> </iframe>
+              </div>
+
               <% } %>
               <% }); %>
             </div>
