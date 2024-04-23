@@ -1,0 +1,3 @@
+* Crear una función que permita identificar el lenguaje en plural e individual de algunos items
+
+* Buscar la proporcionalidad del mapa
