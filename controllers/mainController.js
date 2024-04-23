@@ -10,11 +10,11 @@ controller.plantilla = (req,res) => {
   if (url == '/ciudad-jardin'){
     var info = '409'
   } else if (url =='/granadillo'){
-    var info = '306A'
+    var info = '306'
   } else if (url =='/la-campina'){
-    var info = '501A'
+    var info = '501'
   } else if (url =='/paraiso'){
-    var info = '1001'
+    var info = '100'
   } else if (url =='/tivoli'){
     var info = '102'
   } else if (url =='/villa-carolina'){
