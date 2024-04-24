@@ -1,142 +1,141 @@
 <%- include('partials/_header') %>
 
-<div class="d-flex justify-content-center">
+<div id="todo" class="m-0 p-0">
 
-  <div class=" col-lg-9 col-sm-12">
+    <!-- ----------- SLIDER ----------------- -->
+  <div class="d-flex justify-content-center">
+  
+    <div class=" col-lg-7 col-sm-12">
+      
+      <div class="d-flex img-container" style="overflow: scroll; scroll-snap-type: x mandatory;">
+        
+        <img src="<%=apto %>/1.jpg" class="w-100 img-fluid" style="left: 0; position: sticky; border-radius: 5px; scroll-snap-align: center;" alt="1" />
+        <img src="<%=apto %>/2.jpg" class="w-100 img-fluid" style="left: 0; position: sticky; border-radius: 5px; scroll-snap-align: center;" alt="2" />
+        <img src="<%=apto %>/3.jpg" class="w-100 img-fluid" style="left: 0; position: sticky; border-radius: 5px; scroll-snap-align: center;" alt="3" />
+        <img src="<%=apto %>/4.jpg" class="w-100 img-fluid" style="left: 0; position: sticky; border-radius: 5px; scroll-snap-align: center;" alt="4" />
+        <img src="<%=apto %>/5.jpg" class="w-100 img-fluid" style="left: 0; position: sticky; border-radius: 5px; scroll-snap-align: center;" alt="5" />
+        <img src="<%=apto %>/6.jpg" class="w-100 img-fluid" style="left: 0; position: sticky; border-radius: 5px; scroll-snap-align: center;" alt="6" />
+        
+        <a href="/" type="button" class="bg-white btn btn-overlay rounded-circle" style="position: absolute; left: 5%; top: 5%;  z-index: 100;"> < </a>
+  
+      </div>
     
+    </div>
     
-    <div class="d-flex img-container" style="overflow: scroll; scroll-snap-type: x mandatory;">
-      
-      
-      <img src="<%=apto %>/1.jpg" class="w-100 img-fluid" style="left: 0; position: sticky; border-radius: 5px; scroll-snap-align: center;" alt="1" />
-      <img src="<%=apto %>/2.jpg" class="w-100 img-fluid" style="left: 0; position: sticky; border-radius: 5px; scroll-snap-align: center;" alt="2" />
-      <img src="<%=apto %>/3.jpg" class="w-100 img-fluid" style="left: 0; position: sticky; border-radius: 5px; scroll-snap-align: center;" alt="3" />
-      <img src="<%=apto %>/4.jpg" class="w-100 img-fluid" style="left: 0; position: sticky; border-radius: 5px; scroll-snap-align: center;" alt="4" />
-      <img src="<%=apto %>/5.jpg" class="w-100 img-fluid" style="left: 0; position: sticky; border-radius: 5px; scroll-snap-align: center;" alt="5" />
-      <img src="<%=apto %>/6.jpg" class="w-100 img-fluid" style="left: 0; position: sticky; border-radius: 5px; scroll-snap-align: center;" alt="6" />
-      
-      <a href="/" type="button" class="bg-white btn btn-overlay rounded-circle" style="position: absolute; left: 5%; top: 5%;  z-index: 100;"> < </a>
+  </div>
+    
+    <!-- ----------- CONTENIDO ----------------- -->
+  <div class="d-flex justify-content-center">
+
+    <div>
+
+      <div class="d-flex">
+        <% data.forEach((propiedad,index) => {%>
+        <div id="carpeta" aria-valuetext="<%= apto %>"></div>
+        <% if (propiedad.propiedad == apto){ %>
+        
+          <div id="encabezado" class="ml-4 mr-4 mt-lg-3 mt-2">
+            <tr>  
+              <h3><%= propiedad.titulo %></h3>
+              <h5>Loft en <%= propiedad.ubicacion %>, Barranquilla</h5>
+              <h6><%= propiedad.huespedes %> huéspedes  -  <%= propiedad.habitacion %> habitaciones  -  <%=propiedad.camaSizes.length %> camas  -  <%= propiedad.bano %> baños</h6>
+            </tr> <hr />  
+  
+            <h6 class='texto-apoyo'>Dónde vas a dormir ?</h6>
+                
+            <div class="d-flex w-100">
+              <% for (i = 0; i < propiedad.camaSizes.length; ++i) { %>
+  
+              <div class="p-3 text-center border border-3 mx-2 rounded">
+                <h6>Habitación <%=i + 1 %></h6>
+                <p><%=propiedad.camaSizes[i] %></p>
+              </div>
+              <% } %>  
+  
+            <% if(propiedad.sofaCama > 0) { %>
+              <div class="p-3">
+                <h6>Sofá Cama <%=propiedad.sofaCama %></h6>
+              </div>
+            <% } %>  
+  
+            </div> <hr />
+  
+          <h6 class="mb-4">Lo que este lugar ofrece</h6>
+          
+          <div class="">
+  
+            <ul class="">
+              <p class="fw-bold">Cocina</p>
+              <% for (a = 0 ; a < (propiedad.amenInstalacionesYServicios).length; ++a) { %>
+              <div class="">
+                <li> <%=propiedad.amenCocina[a]  %> </li>
+              </div>
+              <% } %>
+            </ul>
+  
+            <ul class="">
+              <p class="fw-bold">Instalaciones y Servicios</p>
+              <% for (a = 0 ; a < (propiedad.amenInstalacionesYServicios).length; ++a) { %>
+              <div class="">
+                <li> <%=propiedad.amenInstalacionesYServicios[a]  %> </li>
+              </div>
+              <% } %>
+            </ul>
+          </div>
+  
+                
+                <div class="amenidades d-none">
+                  <ul class='formato-amenid'>
+                    <li class='titulo-amenidades'>Dormitorio y Lavadero</li>
+                    <li class='texto-amenid'>Lavadora en la vivienda: Gratis</li>
+                    <li class='texto-amenid'>Secadora en la vivienda: Gratis</li>
+                    <li class='texto-amenid'>Ganchos para la ropa</li>
+                    <li class='texto-amenid'>Sábanas</li>
+                    <li class='texto-amenid'>Almohadas y mantas</li>
+                    <li class='texto-amenid'>Plancha</li>
+                    <li class='texto-amenid'>Espacio para guardar ropa: Armario</li>
+                    
+                    <li class='titulo-amenidades'>Entretenimiento</li>
+                    <li class='texto-amenid'>Conexión Ethernet</li>
+                    <li class='texto-amenid'>Televisor de alta definición Smart TV</li>
+                    <li class='texto-amenid'>Gimnasio</li>
+                    <li class='texto-amenid'>Piscina</li>
+                    
+                    <li class='titulo-amenidades'>Refrigeración</li>
+                    <li class='texto-amenid'>Sistema de aire acondicionado tipo split</li>
+                    <li class='texto-amenid'>Ventiladores portátiles</li>
+                    
+                    <li class='titulo-amenidades'>Internet y oficina</li>
+                    <li class='texto-amenid'>Wifi</li>
+                    <li class='texto-amenid'>Zona de trabajo</li>
+                    
+                    <li class='titulo-amenidades'>Cocina</li>
+  
+  
+                    
+                    <br /> <br />
+                  </ul>
+                  
+                </div>
+                
+                <div class="">
+                  <iframe src="<%=propiedad.mapa %>" class="w-100"> </iframe>
+                </div>
+  
+                <% } %>
+                <% }); %>
+              </div>
+      </div>  
+  
+    </div>
+    
+    </div>
+  </div>
 
     </div>
 
-    
-    
-  </div>
-  
 </div>
 
-<p class="col-1 p-2 text-light rounded-circle"><</p>
-  <div class="">
-  </div>
-  
-  <!-- ----------- CONTENIDO ----------------- -->
-
-  <div class="d-flex justify-content-center">
-
-    <div class="col-lg-8">
-      <% data.forEach((propiedad,index) => {%>
-      <div id="carpeta" aria-valuetext="<%= apto %>"></div>
-      <% if (propiedad.propiedad == apto){ %>
-      
-        <div class="model2 ml-4 mr-4 mt-2">
-          <tr>  
-            <h3><%= propiedad.titulo %></h3>
-            <h5>Loft en <%= propiedad.ubicacion %>, Barranquilla</h5>
-            <h6><%= propiedad.huespedes %> huéspedes  -  <%= propiedad.habitacion %> habitaciones  -  <%=propiedad.camaSizes.length %> camas  -  <%= propiedad.bano %> baños</h6>
-          </tr> <hr />  
-
-        <h6 class='texto-apoyo'>Dónde vas a dormir ?</h6>
-              
-        <div class="d-flex w-100">
-          <% for (i = 0; i < propiedad.camaSizes.length; ++i) { %>
-          <div class="p-3 align-items-center border border-2 mx-2 rounded">
-            <h6>Habitación <%=i + 1 %></h6>
-            <p><%=propiedad.camaSizes[i] %></p>
-          </div>
-          <% } %>  
-
-          <% if(propiedad.sofaCama > 0) { %>
-            <div class="p-3">
-              <h6>Sofá Cama <%=propiedad.sofaCama %></h6>
-            </div>
-          <% } %>  
-
-        </div>
-        <hr />
-
-        <h6 class="mb-4">Lo que este lugar ofrece</h6>
-        
-        <div class="">
-
-          <ul class="">
-            <p class="fw-bold">Cocina</p>
-            <% for (a = 0 ; a < (propiedad.amenInstalacionesYServicios).length; ++a) { %>
-            <div class="">
-              <li> <%=propiedad.amenCocina[a]  %> </li>
-            </div>
-            <% } %>
-          </ul>
-
-          <ul class="">
-            <p class="fw-bold">Instalaciones y Servicios</p>
-            <% for (a = 0 ; a < (propiedad.amenInstalacionesYServicios).length; ++a) { %>
-            <div class="">
-              <li> <%=propiedad.amenInstalacionesYServicios[a]  %> </li>
-            </div>
-            <% } %>
-          </ul>
-        </div>
-
-              
-              <div class="amenidades d-none">
-                <ul class='formato-amenid'>
-                  <li class='titulo-amenidades'>Dormitorio y Lavadero</li>
-                  <li class='texto-amenid'>Lavadora en la vivienda: Gratis</li>
-                  <li class='texto-amenid'>Secadora en la vivienda: Gratis</li>
-                  <li class='texto-amenid'>Ganchos para la ropa</li>
-                  <li class='texto-amenid'>Sábanas</li>
-                  <li class='texto-amenid'>Almohadas y mantas</li>
-                  <li class='texto-amenid'>Plancha</li>
-                  <li class='texto-amenid'>Espacio para guardar ropa: Armario</li>
-                  
-                  <li class='titulo-amenidades'>Entretenimiento</li>
-                  <li class='texto-amenid'>Conexión Ethernet</li>
-                  <li class='texto-amenid'>Televisor de alta definición Smart TV</li>
-                  <li class='texto-amenid'>Gimnasio</li>
-                  <li class='texto-amenid'>Piscina</li>
-                  
-                  <li class='titulo-amenidades'>Refrigeración</li>
-                  <li class='texto-amenid'>Sistema de aire acondicionado tipo split</li>
-                  <li class='texto-amenid'>Ventiladores portátiles</li>
-                  
-                  <li class='titulo-amenidades'>Internet y oficina</li>
-                  <li class='texto-amenid'>Wifi</li>
-                  <li class='texto-amenid'>Zona de trabajo</li>
-                  
-                  <li class='titulo-amenidades'>Cocina</li>
-
-
-                  
-                  <br /> <br />
-                </ul>
-                
-              </div>
-              
-              <div class="">
-                <iframe src="<%=propiedad.mapa %>" class="w-100"> </iframe>
-              </div>
-
-              <% } %>
-              <% }); %>
-            </div>
-    </div>  
-
-  </div>
-
-    <script src="slider.js"></script>
-  
-  </div>
-</div>
 
 
   </body>
