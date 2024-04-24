@@ -1,5 +1,8 @@
 * Crear una función que permita identificar el lenguaje en plural e individual de algunos items
 
+* Que todos los anuncios queden con un mapa
+
 * Buscar la proporcionalidad del mapa
 
 * Mejorar la funcion del slider
+
