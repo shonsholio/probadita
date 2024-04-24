@@ -63,12 +63,48 @@
           <h6 class="mb-4">Lo que este lugar ofrece</h6>
           
           <div class="">
+
+            <ul class="">
+              <p class="fw-bold">Dormitorio y Lavadero</p>
+              <% for (a = 0 ; a < (propiedad.amenDormitorio).length; ++a) { %>
+              <div class="">
+                <li> <%=propiedad.amenDormitorio[a]  %> </li>
+              </div>
+              <% } %>
+            </ul>
   
             <ul class="">
               <p class="fw-bold">Cocina</p>
               <% for (a = 0 ; a < (propiedad.amenInstalacionesYServicios).length; ++a) { %>
               <div class="">
                 <li> <%=propiedad.amenCocina[a]  %> </li>
+              </div>
+              <% } %>
+            </ul>
+
+            <ul class="">
+              <p class="fw-bold">Climatización</p>
+              <% for (a = 0 ; a < (propiedad.amenClima).length; ++a) { %>
+              <div class="">
+                <li> <%=propiedad.amenClima[a]  %> </li>
+              </div>
+              <% } %>
+            </ul>
+
+            <ul class="">
+              <p class="fw-bold">Internet y Oficina</p>
+              <% for (a = 0 ; a < (propiedad.amenOficina).length; ++a) { %>
+              <div class="">
+                <li> <%=propiedad.amenOficina[a]  %> </li>
+              </div>
+              <% } %>
+            </ul>
+
+            <ul class="">
+              <p class="fw-bold">Entretenimiento</p>
+              <% for (a = 0 ; a < (propiedad.amenEntretenimiento).length; ++a) { %>
+              <div class="">
+                <li> <%=propiedad.amenEntretenimiento[a]  %> </li>
               </div>
               <% } %>
             </ul>
@@ -81,43 +117,10 @@
               </div>
               <% } %>
             </ul>
+
+
           </div>
   
-                
-                <div class="amenidades d-none">
-                  <ul class='formato-amenid'>
-                    <li class='titulo-amenidades'>Dormitorio y Lavadero</li>
-                    <li class='texto-amenid'>Lavadora en la vivienda: Gratis</li>
-                    <li class='texto-amenid'>Secadora en la vivienda: Gratis</li>
-                    <li class='texto-amenid'>Ganchos para la ropa</li>
-                    <li class='texto-amenid'>Sábanas</li>
-                    <li class='texto-amenid'>Almohadas y mantas</li>
-                    <li class='texto-amenid'>Plancha</li>
-                    <li class='texto-amenid'>Espacio para guardar ropa: Armario</li>
-                    
-                    <li class='titulo-amenidades'>Entretenimiento</li>
-                    <li class='texto-amenid'>Conexión Ethernet</li>
-                    <li class='texto-amenid'>Televisor de alta definición Smart TV</li>
-                    <li class='texto-amenid'>Gimnasio</li>
-                    <li class='texto-amenid'>Piscina</li>
-                    
-                    <li class='titulo-amenidades'>Refrigeración</li>
-                    <li class='texto-amenid'>Sistema de aire acondicionado tipo split</li>
-                    <li class='texto-amenid'>Ventiladores portátiles</li>
-                    
-                    <li class='titulo-amenidades'>Internet y oficina</li>
-                    <li class='texto-amenid'>Wifi</li>
-                    <li class='texto-amenid'>Zona de trabajo</li>
-                    
-                    <li class='titulo-amenidades'>Cocina</li>
-  
-  
-                    
-                    <br /> <br />
-                  </ul>
-                  
-                </div>
-                
                 <div class="">
                   <iframe src="<%=propiedad.mapa %>" class="w-100"> </iframe>
                 </div>
