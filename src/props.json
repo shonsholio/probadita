@@ -69,7 +69,7 @@
     "bano": 2,
     "amenCocina": ["Refrigerador", "Utensilios básicos para cocinar", "Platos y cubiertos", "Lavavajillas","Estufa a gas","Horno","Cafetera","Tostadora","Licuadora"],
     "amenInstalacionesYServicios": ["Llegada autónoma", "Ascensor", "Cerradura Inteligente","Estacionamiento Gratuito","Balcón Privado","Se permiten mascotas", "Disponible para estadías largas"],
-    "amenDormitorio": ["Lavadora en la vivienda: Gratis", "Secadora en la vivienda: Gratis", "Ganchos para la ropa", "Sábanas", "Almohadas y mantas", "Plancha", "Espacio para guardar ropa: Armario" ],
+    "amenDormitorio": ["Lavadora en la vivienda: Gratis", "Ganchos para la ropa", "Sábanas", "Almohadas y mantas", "Plancha", "Espacio para guardar ropa: Armario" ],
     "amenClima": [ "Aire acondicionado tipo split", "Ventiladores portátiles" ],
     "amenEntretenimiento": [ "Conexión Ethernet", "Televisor de alta definición Smart TV", "Gimnasio", "Piscina" ],
     "amenOficina": [ "Wifi de alta velocidad", "Zona de trabajo" ],
