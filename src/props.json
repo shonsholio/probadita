@@ -13,7 +13,8 @@
     "amenEntretenimiento": [ "Conexión Ethernet", "Televisor de alta definición Smart TV", "Gimnasio", "Piscina" ],
     "amenOficina": [ "Wifi de alta velocidad", "Zona de trabajo" ],
     "mapa": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3916.5942914837283!2d-74.81609342548585!3d10.993964589168344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1713834036771!5m2!1ses-419!2sco"},
-  { "propiedad": "306",
+  
+    { "propiedad": "306",
     "ubicacion": "Granadillo",
     "titulo": "Apto con Aire Acondicionado, Smart TV",
     "huespedes": 2,
@@ -27,7 +28,8 @@
     "amenEntretenimiento": [ "Conexión Ethernet", "Televisor de alta definición Smart TV", "Gimnasio", "Piscina" ],
     "amenOficina": [ "Wifi de alta velocidad", "Zona de trabajo" ],
     "mapa": "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3916.4803223595954!2d-74.82189487088624!3d11.00254337784526!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1713833691166!5m2!1ses-419!2sco"},
-  { "propiedad": "501",
+  
+    { "propiedad": "501",
     "ubicacion": "La Campiña",
     "titulo": "Apto con Aire Acondicionado, Smart TV y Agua Caliente",
     "huespedes": 4,
@@ -39,7 +41,9 @@
     "amenDormitorio": ["Lavadora en la vivienda: Gratis", "Secadora en la vivienda: Gratis", "Ganchos para la ropa", "Sábanas", "Almohadas y mantas", "Plancha", "Espacio para guardar ropa: Armario" ],
     "amenClima": [ "Aire acondicionado tipo split", "Ventiladores portátiles" ],
     "amenEntretenimiento": [ "Conexión Ethernet", "Televisor de alta definición Smart TV", "Gimnasio", "Piscina" ],
-    "amenOficina": [ "Wifi de alta velocidad", "Zona de trabajo" ] },
+    "amenOficina": [ "Wifi de alta velocidad", "Zona de trabajo" ],
+    "mapa": "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3916.4803223595954!2d-74.82189487088624!3d11.00254337784526!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1713833691166!5m2!1ses-419!2sco"},
+
     { "propiedad": "100",
     "ubicacion": "Paraiso",
     "titulo": "Apto con Aire Acondicionado y Smart TV",
@@ -52,7 +56,10 @@
     "amenDormitorio": ["Lavadora en la vivienda: Gratis", "Secadora en la vivienda: Gratis", "Ganchos para la ropa", "Sábanas", "Almohadas y mantas", "Plancha", "Espacio para guardar ropa: Armario" ],
     "amenClima": [ "Aire acondicionado tipo split", "Ventiladores portátiles" ],
     "amenEntretenimiento": [ "Conexión Ethernet", "Televisor de alta definición Smart TV", "Gimnasio", "Piscina" ],
-    "amenOficina": [ "Wifi de alta velocidad", "Zona de trabajo" ] },
+    "amenOficina": [ "Wifi de alta velocidad", "Zona de trabajo" ],
+    "mapa": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7832.5423808765345!2d-74.80124115963112!3d11.018268188281125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1714175085997!5m2!1ses-419!2sco"},
+
+   
     { "propiedad": "102",
     "ubicacion": "Tivoli",
     "titulo": "Apto con Aire Acondicionado y Smart TV",
@@ -65,7 +72,8 @@
     "amenDormitorio": ["Lavadora en la vivienda: Gratis", "Secadora en la vivienda: Gratis", "Ganchos para la ropa", "Sábanas", "Almohadas y mantas", "Plancha", "Espacio para guardar ropa: Armario" ],
     "amenClima": [ "Aire acondicionado tipo split", "Ventiladores portátiles" ],
     "amenEntretenimiento": [ "Conexión Ethernet", "Televisor de alta definición Smart TV", "Gimnasio", "Piscina" ],
-    "amenOficina": [ "Wifi de alta velocidad", "Zona de trabajo" ] },
+    "amenOficina": [ "Wifi de alta velocidad", "Zona de trabajo" ],
+    "mapa": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7832.516590997256!2d-74.81853604335909!3d11.0192370445633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1714175303378!5m2!1ses-419!2sco" },
 
     { "propiedad": "702",
     "ubicacion": "Villa Carolina",
@@ -75,12 +83,14 @@
     "camas": 3,
     "camaSizes": ["1 cama doble", "1 cama doble", "1 cama doble"],
     "sofaCama" : 0,
-    "bano": "2 baños",
+    "bano": 2,
     "amenCocina": ["Refrigerador", "Utensilios básicos para cocinar", "Platos y cubiertos", "Lavavajillas","Estufa a gas","Horno","Cafetera","Tostadora","Licuadora"],
     "amenInstalacionesYServicios": ["Llegada autónoma", "Ascensor", "Cerradura Inteligente","Estacionamiento Gratuito","Balcón Privado","Se permiten mascotas", "Disponible para estadías largas"],
     "amenDormitorio": ["Lavadora en la vivienda: Gratis", "Secadora en la vivienda: Gratis", "Ganchos para la ropa", "Sábanas", "Almohadas y mantas", "Plancha", "Espacio para guardar ropa: Armario" ], 
     "amenClima": [ "Aire acondicionado tipo split", "Ventiladores portátiles" ],
     "amenEntretenimiento": [ "Conexión Ethernet", "Televisor de alta definición Smart TV", "Gimnasio", "Piscina" ],
-    "amenOficina": [ "Wifi de alta velocidad", "Zona de trabajo" ]} 
+    "amenOficina": [ "Wifi de alta velocidad", "Zona de trabajo" ],
+    "mapa": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7832.444816515571!2d-74.81765627880226!3d11.021932975685257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1714175198287!5m2!1ses-419!2sco" } 
+
 ]
 

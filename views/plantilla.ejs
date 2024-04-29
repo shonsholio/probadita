@@ -38,7 +38,13 @@
             <tr>  
               <h3><%= propiedad.titulo %></h3>
               <h5>Loft en <%= propiedad.ubicacion %>, Barranquilla</h5>
+
+              <% if (propiedad.habitacion == 1 && propiedad.bano == 1) { %>
+              <h6><%= propiedad.huespedes %> huéspedes  -  <%= propiedad.habitacion %> habitación  -  <%=propiedad.camaSizes.length %> camas  -  <%= propiedad.bano %> baño</h6>
+              <% } else { %>
               <h6><%= propiedad.huespedes %> huéspedes  -  <%= propiedad.habitacion %> habitaciones  -  <%=propiedad.camaSizes.length %> camas  -  <%= propiedad.bano %> baños</h6>
+              <% } %>
+
             </tr> <hr />  
   
             <h6 class='texto-apoyo'>Dónde vas a dormir ?</h6>
