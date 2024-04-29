@@ -1,5 +1,3 @@
-* Que todos los anuncios queden con un mapa
-
-* Buscar la proporcionalidad del mapa
+* Buscar la proporcionalidad y funcionalidad comunicacional del mapa
 
 * Mejorar la funcion del slider
