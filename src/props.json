@@ -25,7 +25,7 @@
     "amenInstalacionesYServicios": ["Llegada autónoma", "Ascensor", "Cerradura Inteligente","Estacionamiento Gratuito","Balcón Privado","Se permiten mascotas", "Disponible para estadías largas"],
     "amenDormitorio": ["Lavadora en la vivienda: Gratis", "Secadora en la vivienda: Gratis", "Ganchos para la ropa", "Sábanas", "Almohadas y mantas", "Plancha", "Espacio para guardar ropa: Armario" ],
     "amenClima": [ "Aire acondicionado tipo split", "Ventiladores portátiles" ],
-    "amenEntretenimiento": [ "Conexión Ethernet", "Televisor de alta definición Smart TV", "Gimnasio", "Piscina" ],
+    "amenEntretenimiento": [ "Conexión Ethernet", "Televisor de alta definición Smart TV", "Gimnasio" ],
     "amenOficina": [ "Wifi de alta velocidad", "Zona de trabajo" ],
     "mapa": "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3916.4803223595954!2d-74.82189487088624!3d11.00254337784526!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1713833691166!5m2!1ses-419!2sco"},
   
@@ -40,7 +40,7 @@
     "amenInstalacionesYServicios": ["Llegada autónoma", "Ascensor", "Cerradura Inteligente","Estacionamiento Gratuito","Balcón Privado","Se permiten mascotas", "Disponible para estadías largas"] ,
     "amenDormitorio": ["Lavadora en la vivienda: Gratis", "Secadora en la vivienda: Gratis", "Ganchos para la ropa", "Sábanas", "Almohadas y mantas", "Plancha", "Espacio para guardar ropa: Armario" ],
     "amenClima": [ "Aire acondicionado tipo split", "Ventiladores portátiles" ],
-    "amenEntretenimiento": [ "Conexión Ethernet", "Televisor de alta definición Smart TV", "Gimnasio", "Piscina" ],
+    "amenEntretenimiento": [ "Conexión Ethernet", "Televisor de alta definición Smart TV", "Gimnasio" ],
     "amenOficina": [ "Wifi de alta velocidad", "Zona de trabajo" ],
     "mapa": "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3916.4803223595954!2d-74.82189487088624!3d11.00254337784526!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1713833691166!5m2!1ses-419!2sco"},
 
