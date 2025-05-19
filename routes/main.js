@@ -4,6 +4,7 @@ const router = express.Router();
 const mainController = require('../controllers/mainController');
 
 router.get('/', mainController.main);
+router.get('/buenavista', mainController.plantilla);
 router.get('/ciudad-jardin', mainController.plantilla);
 router.get('/granadillo', mainController.plantilla);
 router.get('/la-campina', mainController.plantilla);
